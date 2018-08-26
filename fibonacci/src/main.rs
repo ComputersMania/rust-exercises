@@ -8,12 +8,13 @@ fn main() {
         io::stdin().read_line(&mut x)
             .expect("Failed to read file");
 
-        //Parse user input
+        // Parse user input
         let x: u8 = match x.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
         };
 
+        // That's too much, man
         if x > 93 {
             println!("gfy");
             break
