@@ -25,10 +25,9 @@ fn main() {
 }
 
 fn fibonacci(x: u8) -> u64 {
-    let mut curr = 1u64;
-    let mut prev = 1u64;
-    #[allow(unused_assignments)]
-    let mut tmp = 1u64;
+    let mut curr = 1;
+    let mut prev = 1;
+    let mut tmp;
 
     for _i in 3..(x+1) {
         tmp = curr;
